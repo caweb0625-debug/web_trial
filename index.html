@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durgesh Solanki & Associates | Chartered Accountants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            darkBlue: '#0E3A5D',
+                            lightGray: '#F5F7FA',
+                            accentGold: '#D97706', // Premium Golden-Orange Accent
+                            accentHover: '#B45309'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Poppins', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Open Sans', sans-serif; }
+        .font-heading { font-family: 'Poppins', sans-serif; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        /* Hide scrollbar utility */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-brand-lightGray text-slate-800 antialiased selection:bg-brand-darkBlue selection:text-white">
+
+    <div class="bg-brand-darkBlue text-white text-xs py-2 px-4 sticky top-0 z-50 border-b border-white/10 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone text-brand-accentGold mr-2"></i> +91 7021771799</span>
+                <span><i class="fa-solid fa-envelope text-brand-accentGold mr-2"></i> cadurgeshsolanki@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-slate-300">Timely Compliance Support Across India</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="glass-nav sticky top-0 md:top-8 z-40 shadow-sm border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-brand-darkBlue text-white p-2.5 rounded-lg shadow-md">
+                            <i class="fa-solid fa-scale-balanced text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="block text-lg font-bold font-heading text-brand-darkBlue tracking-tight leading-none">DURGESH SOLANKI</span>
+                            <span class="text-xs font-semibold tracking-widest text-slate-500 uppercase">&amp; ASSOCIATES</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                    <a href="#home" class="hover:text-brand-darkBlue transition-colors">Home</a>
+                    <a href="#about" class="hover:text-brand-darkBlue transition-colors">About</a>
+                    <a href="#services" class="hover:text-brand-darkBlue transition-colors">Services</a>
+                    <a href="#why-choose-us" class="hover:text-brand-darkBlue transition-colors">Why Us</a>
+                    <a href="#contact" class="bg-brand-darkBlue text-white px-5 py-2.5 rounded-md hover:bg-slate-800 transition-all shadow-sm">Book Consultation</a>
+                </div>
+
+                <div class="flex items-center lg:hidden">
+                    <button id="mobile-menu-btn" class="text-brand-darkBlue focus:outline-none p-2 rounded-md hover:bg-slate-100" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 shadow-inner px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 px-3 rounded-md hover:bg-slate-50 font-medium text-slate-700">Home</a>
+            <a href="#about" class="block py-2 px-3 rounded-md hover:bg-slate-50 font-medium text-slate-700">About</a>
+            <a href="#services" class="block py-2 px-3 rounded-md hover:bg-slate-50 font-medium text-slate-700">Services</a>
+            <a href="#why-choose-us" class="block py-2 px-3 rounded-md hover:bg-slate-50 font-medium text-slate-700">Why Us</a>
+            <div class="pt-2 border-t border-slate-100">
+                <a href="#contact" class="block w-full text-center bg-brand-darkBlue text-white py-3 rounded-md font-medium shadow">Book Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative bg-white pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-brand-darkBlue border border-blue-100 uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved text-brand-accentGold"></i> Chartered Accountancy Firm
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-brand-darkBlue tracking-tight leading-tight">
+                        Trusted Chartered Accountants for Tax, Audit &amp; Business Solutions
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Helping businesses and individuals with taxation, compliance, GST, audit, and financial consulting services across India.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#contact" class="bg-brand-accentGold text-white px-8 py-3.5 rounded-md font-semibold hover:bg-brand-accentHover transition-all text-center shadow-lg shadow-brand-accentGold/20 tracking-wide text-sm">
+                            Book Consultation
+                        </a>
+                        <a href="#services" class="border-2 border-brand-darkBlue text-brand-darkBlue px-8 py-3.5 rounded-md font-semibold hover:bg-brand-darkBlue hover:text-white transition-all text-center text-sm">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-5 hidden lg:block relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-50 to-amber-50 rounded-2xl transform rotate-3 scale-105 opacity-70"></div>
+                    <div class="relative bg-white border border-slate-200 p-8 rounded-2xl shadow-xl space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                            <span class="text-xs font-bold text-slate-400 tracking-wider uppercase">Compliance Quick Desk</span>
+                            <span class="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex gap-4 items-start p-3 rounded-lg hover:bg-slate-50 transition-all">
+                                <i class="fa-solid fa-circle-check text-emerald-500 text-xl mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-sm text-brand-darkBlue">Corporate CA Standard</h4>
+                                    <p class="text-xs text-slate-500">Strictly adhering to professional ethical practices.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start p-3 rounded-lg hover:bg-slate-50 transition-all">
+                                <i class="fa-solid fa-circle-check text-emerald-500 text-xl mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-sm text-brand-darkBlue">End-to-End Filing</h4>
+                                    <p class="text-xs text-slate-500">Handling returns, documentation, and representations flawlessly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-brand-darkBlue text-white p-4 rounded-xl flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-slate-300">Direct Office Connection</p>
+                                <p class="font-bold font-heading tracking-wide">+91 7021771799</p>
+                            </div>
+                            <i class="fa-solid fa-phone-volume text-xl text-brand-accentGold"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-brand-lightGray border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest text-brand-accentGold uppercase block mb-2">Corporate Profile</span>
+                <h2 class="text-3xl font-bold font-heading text-brand-darkBlue">About Durgesh Solanki &amp; Associates</h2>
+                <div class="w-12 h-1 bg-brand-accentGold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-7 space-y-6">
+                    <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
+                        Durgesh Solanki &amp; Associates is a professional Chartered Accountancy firm dedicated to providing reliable financial, taxation, audit, and compliance services to businesses, startups, and individuals.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        With a commitment to integrity, accuracy, and timely service, we help clients manage financial responsibilities flawlessly while maintaining strict focus on strategic business growth.
+                    </p>
+                    
+                    <div class="pt-4">
+                        <h3 class="font-heading font-bold text-brand-darkBlue mb-4 text-sm uppercase tracking-wider">Our Core Pillars</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            <div class="bg-white border border-slate-200 p-3.5 rounded text-center shadow-sm">
+                                <i class="fa-solid fa-eye text-brand-darkBlue mb-1 block text-lg"></i>
+                                <span class="font-semibold text-xs text-slate-700">Transparency</span>
+                            </div>
+                            <div class="bg-white border border-slate-200 p-3.5 rounded text-center shadow-sm">
+                                <i class="fa-solid fa-gavel text-brand-darkBlue mb-1 block text-lg"></i>
+                                <span class="font-semibold text-xs text-slate-700">Professional Ethics</span>
+                            </div>
+                            <div class="bg-white border border-slate-200 p-3.5 rounded text-center shadow-sm">
+                                <i class="fa-solid fa-smile-beam text-brand-darkBlue mb-1 block text-lg"></i>
+                                <span class="font-semibold text-xs text-slate-700">Client Satisfaction</span>
+                            </div>
+                            <div class="bg-white border border-slate-200 p-3.5 rounded text-center shadow-sm">
+                                <i class="fa-solid fa-clock text-brand-darkBlue mb-1 block text-lg"></i>
+                                <span class="font-semibold text-xs text-slate-700">Timely Compliance</span>
+                            </div>
+                            <div class="bg-white border border-slate-200 p-3.5 rounded text-center shadow-sm col-span-2 sm:col-span-2">
+                                <i class="fa-solid fa-compass text-brand-darkBlue mb-1 block text-lg"></i>
+                                <span class="font-semibold text-xs text-slate-700">Long-term Financial Guidance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                    <h3 class="font-heading font-bold text-brand-darkBlue text-lg mb-4 border-b border-slate-100 pb-3">
+                        Tailored Solutions For
+                    </h3>
+                    <ul class="space-y-3 font-medium text-slate-700">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-rocket text-brand-accentGold text-sm w-4 text-center"></i> Startups</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-store text-brand-accentGold text-sm w-4 text-center"></i> Small Businesses</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-user-tie text-brand-accentGold text-sm w-4 text-center"></i> Proprietorship Firms</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-handshake text-brand-accentGold text-sm w-4 text-center"></i> Partnership Firms</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-building text-brand-accentGold text-sm w-4 text-center"></i> Private Limited Companies</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-wallet text-brand-accentGold text-sm w-4 text-center"></i> Salaried Individuals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest text-brand-accentGold uppercase block mb-2">Practice Areas</span>
+                <h2 class="text-3xl font-bold font-heading text-brand-darkBlue">Comprehensive Professional Services</h2>
+                <div class="w-12 h-1 bg-brand-accentGold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="border border-slate-200 rounded-xl p-6 bg-brand-lightGray/50 hover:bg-white hover:border-brand-darkBlue hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-darkBlue flex items-center justify-center text-xl mb-5 group-hover:bg-brand-darkBlue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-darkBlue mb-3">GST Registration &amp; Filing</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> GST Registration</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Monthly GST Returns</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> GST Notices Handling</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> GST Consultancy</li>
+                    </ul>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-brand-lightGray/50 hover:bg-white hover:border-brand-darkBlue hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-darkBlue flex items-center justify-center text-xl mb-5 group-hover:bg-brand-darkBlue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-darkBlue mb-3">Income Tax Services</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Income Tax Return Filing</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Tax Planning</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> TDS Returns</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Tax Notices Support</li>
+                    </ul>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-brand-lightGray/50 hover:bg-white hover:border-brand-darkBlue hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-darkBlue flex items-center justify-center text-xl mb-5 group-hover:bg-brand-darkBlue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-darkBlue mb-3">Company Registration</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Private Limited Company</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> LLP Registration</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> MSME Registration</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Startup Registration</li>
+                    </ul>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-brand-lightGray/50 hover:bg-white hover:border-brand-darkBlue hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-darkBlue flex items-center justify-center text-xl mb-5 group-hover:bg-brand-darkBlue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-darkBlue mb-3">Audit &amp; Assurance</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Internal Audit</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Tax Audit</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Statutory Audit</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Financial Verification</li>
+                    </ul>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-brand-lightGray/50 hover:bg-white hover:border-brand-darkBlue hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-darkBlue flex items-center justify-center text-xl mb-5 group-hover:bg-brand-darkBlue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-darkBlue mb-3">Accounting &amp; Bookkeeping</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Daily Accounting</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Payroll Management</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Financial Statements</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> MIS Reporting</li>
+                    </ul>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-brand-lightGray/50 hover:bg-white hover:border-brand-darkBlue hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-darkBlue flex items-center justify-center text-xl mb-5 group-hover:bg-brand-darkBlue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-darkBlue mb-3">Business Consultancy</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Financial Planning</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Business Advisory</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Compliance Management</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-accentGold"></span> Investment Guidance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="py-20 bg-brand-lightGray border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest text-brand-accentGold uppercase block mb-2">Our Value Edge</span>
+                <h2 class="text-3xl font-bold font-heading text-brand-darkBlue">Why Choose Our Firm</h2>
+                <div class="w-12 h-1 bg-brand-accentGold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="flex gap-4 p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-user-check text-2xl text-brand-darkBlue shrink-0"></i>
+                    <div>
+                        <h4 class="font-bold font-heading text-brand-darkBlue mb-1">Experienced CA Professionals</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Providing high-end technical competence and deep statutory understanding.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-calendar-check text-2xl text-brand-darkBlue shrink-0"></i>
+                    <div>
+                        <h4 class="font-bold font-heading text-brand-darkBlue mb-1">Timely Compliance Support</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Strict regulatory frameworks demand exact timelines. We secure them.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-tags text-2xl text-brand-darkBlue shrink-0"></i>
+                    <div>
+                        <h4 class="font-bold font-heading text-brand-darkBlue mb-1">Affordable Service Packages</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">High-caliber fiscal corporate solutions matched beautifully with competitive values.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-id-card-clip text-2xl text-brand-darkBlue shrink-0"></i>
+                    <div>
+                        <h4 class="font-bold font-heading text-brand-darkBlue mb-1">Personalized Client Attention</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Every business architecture operates uniquely. We craft custom tax systems.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-lock text-2xl text-brand-darkBlue shrink-0"></i>
+                    <div>
+                        <h4 class="font-bold font-heading text-brand-darkBlue mb-1">Secure &amp; Confidential Handling</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Your mission-critical transactional files remain safe under strict corporate secrecy.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-comments text-2xl text-brand-darkBlue shrink-0"></i>
+                    <div>
+                        <h4 class="font-bold font-heading text-brand-darkBlue mb-1">Transparent Communication</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">No ambiguous charges or hidden parameters. Upfront corporate integrity always.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-brand-darkBlue text-white overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
+            <i class="fa-solid fa-quote-left text-brand-accentGold text-4xl block opacity-80"></i>
+            <p class="text-lg sm:text-xl md:text-2xl font-light italic leading-relaxed tracking-wide text-slate-200">
+                "Professional and reliable CA services. Highly recommended for GST and tax filing."
+            </p>
+            <div class="pt-2">
+                <span class="block text-sm font-bold tracking-widest font-heading text-brand-accentGold uppercase">— Business Client</span>
+                <span class="text-xs text-slate-400">Verified Advisory Engagement</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-brand-accentGold uppercase block mb-2">Get In Touch</span>
+                        <h2 class="text-3xl font-bold font-heading text-brand-darkBlue">Connect With Our Office</h2>
+                        <div class="w-12 h-1 bg-brand-accentGold mt-4 rounded-full"></div>
+                    </div>
+                    
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Have queries concerning audits, taxation filings, or corporate governance parameters? Submit your information and get connected with our experts.
+                    </p>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-9 h-9 rounded bg-blue-50 text-brand-darkBlue flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-darkBlue mb-0.5">Office Address</h4>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Shop No. 18, Veena Apartment,<br>
+                                    Opp. Patil Hospital, Near Panchmukhi Hanuman Mandir,<br>
+                                    Station Road, Nalasopara (W), Palghar – 401203
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-center">
+                            <div class="w-9 h-9 rounded bg-blue-50 text-brand-darkBlue flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-darkBlue mb-0.5">Phone Call Desk</h4>
+                                <p class="text-slate-600 font-medium">+91 7021771799</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-center">
+                            <div class="w-9 h-9 rounded bg-blue-50 text-brand-darkBlue flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-darkBlue mb-0.5">Email Communications</h4>
+                                <p class="text-slate-600 font-medium">cadurgeshsolanki@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-brand-lightGray p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="font-heading font-bold text-xl text-brand-darkBlue mb-6">Submit Consultation Enquiry</h3>
+                    
+                    <form action="https://formspree.io/f/xpqbgoeq" method="POST" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5" for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brand-darkBlue transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brand-darkBlue transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5" for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brand-darkBlue transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5" for="service">Service Required</label>
+                            <select id="service" name="service" required class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brand-darkBlue transition-colors text-slate-600">
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="GST Services">GST Registration &amp; Filing</option>
+                                <option value="Income Tax">Income Tax Return Filing</option>
+                                <option value="Company Registration">Company Registration / LLP</option>
+                                <option value="Audit Services">Audit &amp; Assurance</option>
+                                <option value="Accounting">Accounting &amp; Bookkeeping</option>
+                                <option value="Business Advisory">Business Consultancy</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5" for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brand-darkBlue transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-darkBlue text-white py-3 px-6 rounded-md font-bold tracking-wide text-sm hover:bg-slate-800 transition-colors shadow">
+                            Submit Enquiry <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 text-sm pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
+            
+            <div class="lg:col-span-5 space-y-4">
+                <div class="flex items-center space-x-3 text-white">
+                    <div class="bg-brand-darkBlue p-2 rounded text-white">
+                        <i class="fa-solid fa-scale-balanced text-lg"></i>
+                    </div>
+                    <span class="font-bold font-heading text-md tracking-tight">DURGESH SOLANKI &amp; ASSOCIATES</span>
+                </div>
+                <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+                    Professional Chartered Accountancy firm rendering meticulous corporate governance solutions covering taxation structure, audits, and business planning setup routines across internal domestic networks.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-darkBlue hover:text-white transition-all" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-darkBlue hover:text-white transition-all" aria-label="Instagram"><i class="fa-brands fa-instagram text-xs"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-darkBlue hover:text-white transition-all" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 space-y-3">
+                <h4 class="text-white font-heading font-bold text-xs uppercase tracking-widest">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#home" class="hover:text-white transition-colors">Home Dashboard</a></li>
+                    <li><a href="#about" class="hover:text-white transition-colors">About Firm Profile</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Practice Jurisdictions</a></li>
+                    <li><button onclick="toggleModal('privacy-modal')" class="hover:text-white transition-colors text-left focus:outline-none">Privacy Policy</button></li>
+                    <li><button onclick="toggleModal('terms-modal')" class="hover:text-white transition-colors text-left focus:outline-none">Terms &amp; Conditions</button></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-4 space-y-3">
+                <h4 class="text-white font-heading font-bold text-xs uppercase tracking-widest">Office Correspondence</h4>
+                <p class="text-xs leading-relaxed text-slate-400">
+                    Shop No. 18, Veena Apartment, Opp. Patil Hospital, Near Panchmukhi Hanuman Mandir, Station Road, Nalasopara (W), Palghar – 401203
+                </p>
+                <p class="text-xs text-white font-semibold pt-1">Desk: +91 7021771799</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <p>&copy; 2026 Durgesh Solanki &amp; Associates. All Rights Reserved.</p>
+            <p>Developed in compliance with ICAI Professional Guidelines.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917021771799?text=Hello%20Durgesh%20Solanki%20%26%20Associates%2C%20I%20visited%20your%20website%20and%20want%20to%20enquire%20about%20your%20CA%20services." 
+       target="_blank" 
+       rel="noopener"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-2xl hover:bg-emerald-600 hover:scale-105 transition-all"
+       aria-label="Contact via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div id="privacy-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[80vh] flex flex-col">
+            <div class="p-6 border-b border-slate-200 flex justify-between items-center">
+                <h3 class="font-heading font-bold text-lg text-brand-darkBlue">Privacy Policy</h3>
+                <button onclick="toggleModal('privacy-modal')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm text-slate-600 no-scrollbar">
+                <p class="font-medium text-slate-800">At Durgesh Solanki &amp; Associates, we value your privacy and are committed to protecting your personal information.</p>
+                <h4 class="font-bold text-brand-darkBlue pt-2">Information We Collect</h4>
+                <p>We may collect your Name, Phone number, Email address, Business details, and Financial information shared for consultancy purposes.</p>
+                <h4 class="font-bold text-brand-darkBlue pt-2">How We Use Information</h4>
+                <p>Your information is used only for: Providing CA and consultancy services, Client communication, Legal compliance, and Service improvement.</p>
+                <h4 class="font-bold text-brand-darkBlue pt-2">Data Protection</h4>
+                <p>We maintain strict confidentiality and implement reasonable security measures to protect client data.</p>
+                <h4 class="font-bold text-brand-darkBlue pt-2">Third-Party Sharing</h4>
+                <p>We do not sell or share your personal information with unauthorized third parties.</p>
+            </div>
+            <div class="p-4 border-t border-slate-100 bg-slate-50 rounded-b-xl flex justify-end">
+                <button onclick="toggleModal('privacy-modal')" class="bg-brand-darkBlue text-white px-4 py-2 rounded text-xs font-semibold">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[80vh] flex flex-col">
+            <div class="p-6 border-b border-slate-200 flex justify-between items-center">
+                <h3 class="font-heading font-bold text-lg text-brand-darkBlue">Terms &amp; Conditions</h3>
+                <button onclick="toggleModal('terms-modal')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm text-slate-600 no-scrollbar">
+                <p class="font-medium text-slate-800">Welcome to Durgesh Solanki &amp; Associates. By accessing this website, you agree to comply with the following terms.</p>
+                <h4 class="font-bold text-brand-darkBlue pt-2">Professional Services</h4>
+                <p>All services are subject to Indian laws and professional CA regulations prescribed by the statutory bodies.</p>
+                <h4 class="font-bold text-brand-darkBlue pt-2">Accuracy of Information</h4>
+                <p>While we strive to provide accurate information, the website content is for general informational purposes only and does not constitute formal binding advisory portfolios.</p>
+                <h4 class="font-bold text-brand-darkBlue pt-2">Client Responsibility</h4>
+                <p>Clients are responsible for providing authentic, complete, and highly accurate transactional, financial, and legal files.</p>
+                <h4 class="font-bold text-brand-darkBlue pt-2">Limitation of Liability</h4>
+                <p>We are not liable for legal or systemic financial losses arising from incomplete or incorrect records provided to our office desk.</p>
+            </div>
+            <div class="p-4 border-t border-slate-100 bg-slate-50 rounded-b-xl flex justify-end">
+                <button onclick="toggleModal('terms-modal')" class="bg-brand-darkBlue text-white px-4 py-2 rounded text-xs font-semibold">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle mobile responsive menu setup logic 
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if(mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = "fa-solid fa-bars text-2xl";
+            } else {
+                menuIcon.className = "fa-solid fa-xmark text-2xl";
+            }
+        });
+
+        // Close menu on link navigation selection click tracking
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = "fa-solid fa-bars text-2xl";
+            });
+        });
+
+        // Modals opening/closing helper system
+        function toggleModal(id) {
+            const container = document.getElementById(id);
+            if(container.classList.contains('hidden')) {
+                container.classList.remove('hidden');
+                container.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Stop background scrolling
+            } else {
+                container.classList.add('hidden');
+                container.classList.remove('flex');
+                document.body.style.overflow = 'auto'; // Re-enable background scrolling
+            }
+        }
+    </script>
+</body>
+</html>
